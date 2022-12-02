@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+
+{% block head %}
+    <title>todolist_hija</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center;">Lista de Tareas</h1>
+    {% if tasks|length < 1 %}
+    <h4 style="text-align: center;">No hay datos en esta lista</h4>
+
+    <table>
+        <tr>
+            <th>
+                Tareas
+
+            </th>
+            <th>
+                Agregadas
+            </th>
+            <th>
+                Opciones
+            </th>
+
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.content }}</td>
+            <td>{{ task.date_created.date() }}</td>
+            <td>
+                <a href="/template/delete/{{task.id}}">Eliminar</a>
+                <br>}
+                <a href="/template/update/{{task.id}}">Actualizar</a>
+            </td>
+        </tr>
+        {% end form %}
+    </table>
+    {% end form %}
+</div>    
+
+<div class="form">
+    <form action="/" method="post">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Agregar Tarea">
+    </form>
+</div>
+{% endblock %}

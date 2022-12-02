@@ -1,0 +1,52 @@
+body, html{ 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darksalmon;
+
+}
+
+.content{ 
+    margin: 0;
+    width: 400px;
+    
+}
+
+table, td, th{
+    border: 1px solid rgb(32, 73, 144)
+ }
+
+table{ 
+    border-collapse: collapse;
+    width: 100%;
+
+
+}
+
+
+th{ 
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+td{ 
+text-align: center;
+padding: 5px;
+
+}
+
+.form{ 
+    margin-top: 20px;
+
+
+}
+
+#content{ 
+    width: 70%;
+}
+
+
+
+{ }
+{ }
+{ }
